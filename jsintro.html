@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunctioninheader() {
+  document.getElementById("demo").innerHTML = "myFunctioninheader changed.";
+}
+</script>
+<script src="myscript.js"></script> 
+</head>
+<body>
+
+<h2>Demo JavaScript in Head</h2>
+<script>
+function myFunctioninbody() {
+  document.getElementById("demo").innerHTML = "myFunctioninbody changed.";
+}
+</script>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunctioninheader()">Try myFunctioninheader</button>
+<button type="button" onclick="myFunctioninbody()">Try myFunctioninbody</button>
+<button type="button" onclick="myFunctioninscript()">Try myFunctioninscript</button>
+
+</body>
+</html>

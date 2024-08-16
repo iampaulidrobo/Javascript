@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Text Color</title>
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+    <style>
+        h1 {
+            color: #002999;
+            text-align: center;
+        }
+
+        center {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        div {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            border: 1px solid black;
+            background-color: #e6e65b;
+            /* border: 1px solid black;*/
+            border-collapse: collapse;
+            border-spacing: 5px;
+        }
+
+        th {
+            padding: 20px;
+            text-align: left;
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+            color: #002999;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Color and their types</h1>
+    <center>
+        <div style="border: 5px solid skyblue;">
+            (using custom_center)Backround color,text color,border line color
+            link color are major types for color usage.
+            They can be specified using various formats such as hexadecimal, RGB, RGBA, HSL, HSLA, color names, and
+            system color keywords.
+
+        </div>
+        <span>
+            <a href="#" style="color: #ff6347;">
+                Link has a tomato color.uses span(inline block element)
+            </a>
+        </span>
+        <p style="color: darkgreen;">
+            Paragraph with Dark Green Text color.Can be done using span
+        </p>
+        <h2 style="background-color: gray;">
+            For RGB -by adjusting these values from 0 to 255, we can produce 16,777,216 unique colors. </h2>
+        <h2 style="background-color: #808080;">
+            Hexadecimal values in CSS are represented as #rrggbb, where rr, gg, and bb denote the intensity of red,
+            green, and blue, respectively, ranging from 00 to ff.
+        </h2>
+        <h2 style="background-color: #747373;">
+            RGBA (Red, Green, Blue, Alpha) is a color model similar to RGB, but with an added alpha parameter
+            representing transparency. The alpha value, which ranges from 0 to 1, adjusts transparency, allowing the
+            display of colors with varying levels of opacity. It’s representation is as rgba(red, green, blue, alpha).
+        </h2>
+
+        <div style="background-color: hsl(0, 0%, 53%);">
+            This div has a golden background using HSL. HSL representation defines colors based on Hue, Saturation, and
+            Lightness components, offering a more intuitive way to specify colors.
+            Hue represents the color type, ranging from 0 to 360 degrees.
+            Saturation determines the intensity or purity of the color, from 0% (grayscale) to 100% (full color).
+            Lightness controls the brightness of the color, ranging from 0% (black) to 100% (white), with 50%
+            representing normal.
+
+        </div>
+    </center>
+    <h1>Tables</h1>
+    <table>
+        <caption>Different table attributes goes rowise <caption> </caption>
+        <tr>
+            <th>&lttr&gt &ltth&gt &lttd&gt</th>
+            <th>attributes</th>
+            <th>description</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&lttable&gt</td>
+            <td>Defines the structure for organizing data in rows and columns within a web page.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&lttr&gt</td>
+            <td>Represents a row within an HTML table, containing individual cells.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&ltth&gt</td>
+            <td>Shows a table header cell that typically holds titles or headings.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&lttd&gt</td>
+            <td>Represents a standard data cell, holding content or data.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&ltcaption&gt</td>
+            <td>Provides a title or description for the entire table.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&ltthread&gt</td>
+            <td>Defines the header section of a table, often containing column labels.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&ltbody&gt</td>
+            <td>Represents the main content area of a table, separating it from the header or footer.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&ltfoot&gt</td>
+            <td>Specifies the footer section of a table, typically holding summaries or totals.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&ltcol&gt</td>
+            <td>Defines attributes for table columns that can be applied to multiple columns at once.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&ltcolgroup&gt</td>
+            <td>Groups together a set of columns in a table to which you can apply formatting or properties
+                collectively.</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone colspan for 2 rows</th>
+        </tr>
+        <tr>
+            <td>Elon Musk</td>
+            <td>9125577854</td>
+            <td>8565557785</td>
+        </tr>
+
+        <tr>
+            <th>Name:</th>
+            <td>Elon musk son</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone rowspan</th>
+            <td>9125577854</td>
+        </tr>
+        <tr>
+            <td>8565557785</td>
+        </tr>
+    </table>
+
+    <table border=5 bordercolor=black>
+        <caption>Nested tables</caption>
+        <tr>
+            <td> First Column </td>
+            <td>
+                <table border=5 bordercolor=grey>
+                    <tr>
+                        <td> First row of Inner Table </td>
+                    </tr>
+                    <tr>
+                        <td> Second row of Inner Table </td>
+                    </tr>
+                    <tr>
+                        <td> third row of Inner Table </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <h1>Lists</h1>
+
+    <ul>
+        <li>&ltul&gt or &ltol&gt for unordered and ordered list</li>
+        <li>&ltli&gt for list items</li>
+        start the ol from number 5 or 'i'
+        <ol start="5">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+        maybe a reverse data too
+        <ol reversed>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+        <li>&ltdl&gt-Description list along with &ltdt&gt define term and &ltdd&gt define the data for term </li>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- 500 gms</dd>
+            <dt>Milk</dt>
+            <dd>- 1 ltr Tetra Pack</dd>
+        </dl>
+
+    </ul>
+
+
+    <h2>HTML iframe Tag</h2>
+    <iframe src="https://media.geeksforgeeks.org/wp-content/uploads/20240206111438/uni2.html" height="370" width="400"
+        style="border: 4px solid orange">
+    </iframe>
+    <p>Iframe Target in Link
+        <a href="https://media.geeksforgeeks.org/wp-content/uploads/20240206111438/uni2.html" target="iframe_a">
+            Converter
+        </a>
+    </p>
+
+
+</body>
+
+</html>
