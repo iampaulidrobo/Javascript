@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Semantics</title>
+    <style>
+        h1 {
+            color: #002999;
+            text-align: center;
+        }
+
+        p {
+            font-size: 15px;
+            color: #995700;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Article</h1>
+    <p>It contains independent content which doesn’t require any other context blog Post, Newspaper Article, etc.
+    </p>
+    <article>
+        <p style="color: aqua;">Example for the article to be viewed</p>
+
+    </article>
+
+    <h1>Aside</h1>
+    <p>It is used to place content in a sidebar i.e. aside from the existing content. It is related to surrounding
+        content.
+    </p>
+    <aside>
+        <p style="color: aqua;">Example for the aside to be viewed</p>
+
+
+    </aside>
+
+    <h1>Details and Summary</h1>
+    <p>The “details” defines additional details that the user can hide or view. “summary” defines a visible heading
+        for a “details” element.
+    </p>
+    <details>
+        <summary style="color: aqua;">
+            summary
+        </summary>
+        <p style="color: aqua;">Example for the details to be viewed</p>
+
+        </p>
+
+    </details>
+
+    <h1>Fig and Figcaption</h1>
+    <p> GeeksforGeeks Logo.fig and figcaption are used to add an image to a web page with a small description.
+    </p>
+    <figure>
+        <img src="4.png" alt="gfg" style="width:20%">
+        <figcaption style="color: aqua;">
+            logo </figcaption>
+
+    </figure>
+
+    <h1>Multiple header</h1>
+    <p>As the name suggests, it is for the header of a section introductory of a page. There can be multiple
+        headers on a page. </p>
+    <article>
+        <header>
+            <h1 style="color: aqua;">header1</h1>
+            <h1 style="color: aqua;">header2</h1>
+
+        </header>
+    </article>
+
+    <h1>Footer</h1>
+    <p>
+        Footer located at the bottom of any article or document, they can contain contact details, copyright
+        information etc. There can be multiple footers on a page.
+    </p>
+    <footer>
+
+        <p style="color: aqua;">
+            Contact:
+            <a style="color: aqua;" href="https://www.geeksforgeeks.org">
+                geeksforgeeks.org
+            </a>.
+        </p>
+    </footer>
+    <h1>Main</h1>
+    <p>It defines the main content of the document. The content inside the main tag should be unique. </p>
+    <main>
+        <h2 style="color: aqua;">Header</h2>
+        <p>
+            description
+        </p>
+
+        <article>
+            <h2 style="color: aqua;">article1</h2>
+            <p>
+                content1
+            </p>
+        </article>
+
+        <article>
+            <h2 style="color: aqua;">article2</h2>
+            <p>
+                content2
+            </p>
+        </article>
+    </main>
+    <h1>Section</h1>
+    <p>A page can be split into sections like Introduction, Contact Information, Details, etc and each of these
+        sections can be in a different section tag.</p>
+
+    <section>
+        <h2 style="color: aqua;">section1</h2>
+        <p>
+            content1
+        </p>
+    </section>
+    <section>
+        <h2 style="color: aqua;">section1</h2>
+        <p>
+            content1
+        </p>
+    </section>
+
+    <h1>Navigation Bar</h1>
+    <p>It is used to define a set of navigation links in the form of a navigation bar or nav menu. </p>
+    <nav>
+        <a style="color: aqua;" href="/home/">
+            Home
+        </a> |
+        <a style="color: aqua;" href="/about-us/">
+            About Us
+        </a> |
+        <a style="color: aqua;" href="/data-structure/">
+            Data Structure
+        </a> |
+        <a style="color: aqua;" href="/operating-system/">
+            Operating System
+        </a>
+    </nav>
+
+    <h1>Div Tag</h1>
+    <p>Tags like div, and span fall under the Non-Semantic categories as their names don’t tell anything about what
+        kind of content is present inside them.
+        div It is a block-level element or division of a section. It is used as a container.</p>
+
+    <div style="color: aqua;">
+        <h1 style="color: aqua;">GeeksforGeeks</h1>
+        
+  </div>
+  <h1>Symbols and emotes</h1>
+    <p style="color: aqua;">Showing euro &euro;</p>
+    <p style="color: aqua;">Showing cent &cent;</p>
+    <p style="color: aqua;">Showing Copyright &copy;</p>
+    <p style="color: aqua;">Showing BLACK DIAMOND SUIT &diams;</p>
+    <p style="color: aqua;">Showing TRADEMARK &trade;</p>
+
+    <p style="color: aqua;">these is the sign of :♀ </p>
+    <p style="color: aqua;">
+        &#x1F682; Train &nbsp;&nbsp;
+
+    </p>
+
+    <h1>Code</h1>
+    <p>To display computer code snippets with fixed formatting for optimal readability. It renders the code in a monospace font, preserving the original spacing and layout. </p>
+    <pre>
+        <code> 
+            #include &lt;stdio.h&gt; 
+            int main() { 
+                printf("Hello Geeks"); 
+            } 
+        </code> 
+    </pre>
+    <h1>kbd</h1>
+   <p>used for keyboard inputs</p>
+    <kbd>Alt </kbd>
+    <kbd>+</kbd>
+    <kbd>Tab</kbd>
+    <span>
+        is used to switch between open apps
+    </span>
+    <h1>samp</h1>
+    <p>USed for program output sample</p>
+    <samp>Hello world</samp>
+    <h1>var</h1>
+    <p>Used to display mathematical variables</p>
+    <var>x y</var> represents coordinates
+
+</body>
+
+</html>
